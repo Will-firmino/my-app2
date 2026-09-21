@@ -1,7 +1,8 @@
 import { View } from "react-native";
-import { Header } from '../components/Header';
-import { ButtonIcon } from '../components/ButtonIcon';
-import { Title } from '../components/Title';
+
+import Header from '../components/Header';
+import ButtonIcon from '../components/ButtonIcon';
+import Title from '../components/Title';
 
 export default function Home() {
     return (
@@ -13,7 +14,7 @@ export default function Home() {
             <Header>
                 <Title>Home</Title>
                 <ButtonIcon 
-                    name="add-circle"
+                    icon="add-circle"
                     />
             </Header>
 

@@ -1,9 +1,9 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
 
-export default function ButtonIcon({ icon }) {
+export default function ButtonIcon({ icon, ...rest }) {
     return (
-        <TouchableOpacity >
+        <TouchableOpacity {...rest}>
             <MaterialIcons 
                 name={icon}
                 size={24}
@@ -11,3 +11,5 @@ export default function ButtonIcon({ icon }) {
         </TouchableOpacity>
     )
 }
+
+// rest, ...rest
